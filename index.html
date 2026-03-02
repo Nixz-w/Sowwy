@@ -7,14 +7,19 @@
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #6a1b9a; /* Deep Purple */
+            /* Added your picture ONLY, with no purple overlay */
+            background-image: url('https://files.catbox.moe/19rhhv.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
             margin: 0;
             overflow: hidden;
-            transition: background-color 1s ease;
+            /* Transition is no longer needed since background doesn't change */
         }
         .container {
             text-align: center;
@@ -100,23 +105,18 @@
             <div class="success-text">ilysmmmmmmm :3</div>
             <img src="https://files.catbox.moe/zijbrk.gif" alt="Forgiveness GIF" class="success-gif">
             <div class="final-text">
-                 
-         I'm glad we're okay now YIPPE <img src="https://cdn.discordapp.com/emojis/837740608227115059.webp?size=48&name=IchigoHappy&lossless=true" alt="Happy Emoji" class="success-img"> 
-         <br>I promise to be more understanding in the future :3
+                I'm glad we're okay now YIPPE <img src="https://cdn.discordapp.com/emojis/837740608227115059.webp?size=48&name=IchigoHappy&lossless=true" alt="Happy Emoji" class="success-img"> 
+                <br>I promise to be more understanding in the future :3
             </div>
         </div>
     </div>
 
     <script>
         function showLove() {
-            // Change background to a brighter purple
-            document.body.style.backgroundColor = "#9c27b0";
+            // Simplified: The background image stays exactly the same when "Yes" is clicked.
             
-            // Hide the header and buttons
             document.getElementById('headerText').style.display = 'none';
             document.getElementById('btnContainer').style.display = 'none';
-            
-            // Show the success message and gif
             document.getElementById('message').style.display = 'block';
         }
 
